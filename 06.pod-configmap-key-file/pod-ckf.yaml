@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-ckf
+spec:
+  volumes:
+  - name: config-vol
+    configMap: 
+      name: literal-config
+      items: 
+      - key: key1
+        path: key1.value.txt
+  containers:
+  - name: nginx
+    image: nginx
+    volumeMounts:
+    - mountPath: /keyfile/config
+      name: config-vol
+

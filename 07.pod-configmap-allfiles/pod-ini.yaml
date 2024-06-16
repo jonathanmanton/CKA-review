@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-ini
+spec:
+  volumes:
+  - name: ini-vol
+    configMap: 
+      name: ini-config
+  containers:
+  - name: nginx
+    image: nginx
+    volumeMounts:
+    - mountPath: /ini
+      name: ini-vol
