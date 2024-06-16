@@ -1,0 +1,15 @@
+apiVersion: "v1"
+kind: Pod
+metadata:
+  name: pod-emptydir
+spec:
+  volumes:
+  - name: empty-vol
+    emptyDir:
+      sizeLimit: 200Mi
+  containers:
+  - name: nginx-pod
+    image: nginx
+    volumeMounts:
+    - mountPath: /empty
+      name: empty-vol
