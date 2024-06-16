@@ -1,3 +1,4 @@
+To run through these again delete the solution.cmd file and the yaml file (if present) from the directory.
 ## Contents
 
 1. [Pod with emptyDir](01.pod-emptydir/01.md)
