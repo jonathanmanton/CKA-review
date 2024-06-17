@@ -1,4 +1,11 @@
-To run through these again delete the solution.cmd file and the yaml file (if present) from the directory.
+## Purpose
+This repository is intended to train "simple" actions in kubernetes for help in preparing for the CKA exam.  
+
+The idea is that if these actions can be performed from memory, without having to copy/paste from the kubernetes.io documentation, then there will be more time during the exam to work on "hard" problems.
+
+The solution.cmd and name.yaml files in each directory implement the desired solution.  
+Most directories also include a check.cmd and cleanup.cmd file.
+To use these, make sure you are in the directory in question and source the file (e.g., type "source check.cmd" or ". cleanup.cmd").
 ## Contents
 
 1. [Pod with emptyDir](01.pod-emptydir/01.md)
