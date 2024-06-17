@@ -6,6 +6,8 @@ The idea is that if these actions can be performed from memory, without having t
 The solution.cmd and name.yaml files in each directory implement the desired solution.  
 Most directories also include a check.cmd and cleanup.cmd file.
 To use these, make sure you are in the directory in question and source the file (e.g., type "source check.cmd" or ". cleanup.cmd").
+
+It may be helpful to determine a random order in which to do these exercises.  You can do that on Linux with "ls | shuf > order ; cat order".  This shuffles the order of the subdirectories for each exercise.
 ## Contents
 
 1. [Pod with emptyDir](01.pod-emptydir/01.md)
